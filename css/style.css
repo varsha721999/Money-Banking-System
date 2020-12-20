@@ -1,0 +1,348 @@
+/* style body */
+
+body {background-color:lightskyblue;}
+
+/* Style the header with a grey background and some padding */
+.header {
+ overflow: hidden;
+ /*background-color: white;*/
+ padding: 20px 10px;
+}
+
+/* Style the header links */
+
+.header a{
+    float: left;
+    color: #000;
+    text-align: center;
+    font-family: cursive;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+}
+
+/* style the logo link */
+
+.header a.logo{
+    font-size: 20px;
+    font-family: cursive
+    
+}
+
+/* change the background color on mouse-over */
+
+.header a:hover{
+    background-color: grey;
+    color: white;
+}
+
+/* float the link section to right */
+
+.header-right{
+    float: right;
+    font-family: cursive;
+}
+
+
+/* style header2 H3 H4*/
+
+.header2{
+    float: right;
+    color: black;
+    font-size: 50px;
+    font-family: cursive;
+    padding-right: 120px;
+    padding-top: 50px;
+    
+}
+
+.p{
+  float:right;
+  color:black;
+  font-size: 40px;
+  font-family: cursive;
+  padding-right:120px;
+  padding-top: 0px;
+}
+
+.button1{  
+   font-size: 17px;
+  font-weight: 300;
+  color:lightblue;
+ border-radius: 4px 4px 4px 4px;
+ background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+padding: 2px 5px ; 
+  display: inline;
+  margin-left:100px;
+
+}
+
+,button1:hover{
+  background: linear-gradient(57deg, #1E4D92, #00C6A7 );   
+}
+
+
+/* style header3 */
+
+.header3{
+    font-size: medium;
+    padding-right:150px ;
+
+}
+
+.image{
+   width: 45%;
+   height: auto;
+   overflow: hidden;
+   margin-top: 20px;
+   border-radius:30%;
+    
+}
+
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* style sparks.html */
+
+.sparks{
+  float: right;
+    color: #000;
+    text-align: center;
+    font-family: cursive;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    
+    
+}
+
+
+.Mission{
+    font-size: large;
+    font-family: cursive;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.Mission2{
+    font-size: large;
+    font-family: cursive;
+}
+
+.values{
+    font-size: large;
+    font-family: cursive;
+    text-align: center;
+    background-color: white;
+}
+
+.values2{
+    font-size: large;
+    font-family: cursive;
+}
+
+.values{
+    font-size: large;
+    font-family: cursive;
+    
+
+}
+
+
+/* style details.html */
+
+.heading{
+    font-size:large;
+    font-family: cursive;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: right;
+    font-size: large;
+    font-family: cursive;
+
+  }
+  
+  li.hover{
+      background-color:grey;
+      color: white;
+  }
+
+
+  li a {
+    display: block;
+    color:black;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:gray;
+    text-decoration: none;
+    color: white;
+  }
+
+
+  .table{
+      font-size: large;
+      font-family: cursive;
+  }
+
+
+  /* style (button) */
+
+  body {font-family: cursive;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: lightblue;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-family: cursive;
+  font-size: large;
+}
+
+.open-button:hover{
+    background-color:gray ;
+    color: white;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  font-family: cursive;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color:black;
+  font-size: large;
+  font-family: cursive;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a olive background color to the cancel button */
+.form-container .cancel {
+  background-color: olive;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* style money.php */
+
+.formframe{
+  margin-top: 100px;
+
+}
+body {font-family: Cursive;}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding-top: 22px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  
+}
+
+button[type=TRANSFER] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: large;
+  font-family: cursive;
+  width: 10%;
+}
+
+button[type=TRANSFER]:hover {
+  background-color: #45a049;
+  
+}
+
+.container {
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 5px;
+  max-width: 100%;
+
+} 
